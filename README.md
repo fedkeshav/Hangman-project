@@ -9,3 +9,8 @@ Defined a variable with a list of words. Have asked user for an input and valida
 ## Milestone 3
 Defined two functions - one to check if the guessed letter is in the randomly chosen word, and another to ask for user input and check if it is part of the random word. Screenshot below
 ![image](https://github.com/fedkeshav/Hangman-project/assets/117583202/4e29b2bb-20e0-4307-8b90-70632b3715cb)
+
+## Milestone 4 - Creating class and methods
+Created a class called Hangman with five attributes. 
+Created two object methods check_guess and ask_for_input which updates the class attributes, checks for validity of inputs and whether it is a valid guess
+![image](https://github.com/fedkeshav/Hangman-project/assets/117583202/ac39d2cc-a612-4cf2-9fc4-a3a23fc53135)
