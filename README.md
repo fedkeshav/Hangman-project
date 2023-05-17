@@ -14,3 +14,9 @@ Defined two functions - one to check if the guessed letter is in the randomly ch
 Created a class called Hangman with five attributes. 
 Created two object methods check_guess and ask_for_input which updates the class attributes, checks for validity of inputs and whether it is a valid guess
 ![image](https://github.com/fedkeshav/Hangman-project/assets/117583202/ac39d2cc-a612-4cf2-9fc4-a3a23fc53135)
+
+## Milestone 5 - Creating the final function to play the game
+Imported all code for class creation and methods from Milestone 4.
+Added to it a new method called play_game to actually help play game with users. 
+Added all docstrings to explain classes and methods in the file
+Screenshot too long to put here
