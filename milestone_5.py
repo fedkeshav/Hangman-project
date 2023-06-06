@@ -13,7 +13,7 @@ class Hangman():
 
     The two methods are defined below
     '''
-    def __init__(self, word_list: list, num_lives = 5):
+    def __init__(self, word_list: list, num_lives=5):
         self.num_lives = num_lives
         self.word_list = word_list        
         self.word = random.choice(word_list).lower()
@@ -25,13 +25,11 @@ class Hangman():
 
     def check_guess(self, guess):
         '''
-        Checks if the letter guessed is in the word
+        Prints message of whether or not the letter is in the word. Changes num_letters and num_lives
         
         Args:
             guess = letter guessed by user
 
-        Returns:
-            Printed message of whether or not the letter is in the word. Changes num_letters and num_lives
         '''
         guess = guess.lower()
         if guess in self.word:
@@ -40,14 +38,17 @@ class Hangman():
                 if self.word[i] == guess:
                     self.word_guessed[i] = self.word[i]
             self.num_letters -= 1   
+            print(self.word_guessed)
         else:
             self.num_lives -= 1
             print(f'Sorry! The letter {guess} is not in the word')
+            print(self.word_guessed)
             print(f'You have {self.num_lives} lives left')
 
     def ask_for_input(self):
         '''
-        Asks user to pass through valid input, and then checks if the letter was already entered before by looking at list_of_guesses attribute. If not adds it to the attribute
+        Asks user to pass through valid input, and then checks if the letter was already entered 
+        before by looking at list_of_guesses attribute. If not, adds it to the attribute
         '''
         while True:
             guess = input('Enter a single letter: ')
@@ -65,6 +66,9 @@ class Hangman():
 def play_game(word_list):    
     '''
     Main method to play the game with the user
+
+    Args:
+        word_list: List of words for the guesser to guess from
     '''
     num_lives = 5
     game = Hangman(word_list,num_lives)
